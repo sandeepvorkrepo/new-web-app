@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Light Themed To-Do App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="todo-app">
+    <h1>To-Do List</h1>
+    <div class="input-group">
+      <input
+        type="text"
+        id="new-task-input"
+        placeholder="Add a new task..."
+        aria-label="New task"
+      />
+      <button id="add-task-btn">Add</button>
+    </div>
+
+    <ul id="task-list"></ul>
+
+    <div class="controls">
+      <div class="filters">
+        <button class="filter-btn" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="active">Active</button>
+        <button class="filter-btn" data-filter="completed">Completed</button>
+      </div>
+      <button id="clear-completed-btn">Clear Completed</button>
+    </div>
+
+    <div class="import-export">
+      <button id="export-btn">Export JSON</button>
+      <input type="file" id="import-file" accept=".json" />
+      <button id="import-btn">Import JSON</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
