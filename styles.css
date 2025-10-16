@@ -1,0 +1,140 @@
+/* Basic reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.todo-app {
+  width: 100%;
+  max-width: 450px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#new-task-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#add-task-btn {
+  padding: 10px 15px;
+  border: none;
+  background: #4caf50;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#add-task-btn:hover {
+  background: #45a049;
+}
+
+ul#task-list {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+ul#task-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f1f1f1;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.task-text.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.filters {
+  display: flex;
+  gap: 5px;
+}
+
+.filter-btn {
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  background: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.filter-btn:hover {
+  background: #eee;
+}
+
+#clear-completed-btn {
+  padding: 6px 10px;
+  border: none;
+  background: #e53935;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#clear-completed-btn:hover {
+  background: #d32f2f;
+}
+
+.import-export {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#import-btn,
+#export-btn {
+  padding: 8px;
+  border: none;
+  background: #1976d2;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+#import-btn:hover,
+#export-btn:hover {
+  background: #1565c0;
+}
+
+#import-file {
+  font-size: 14px;
+}
